@@ -532,6 +532,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "ferveo-common-pre-release"
+version = "0.1.1"
+source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
+dependencies = [
+ "ark-ec",
+ "ark-serialize",
+ "ark-std",
+ "bincode",
+ "generic-array",
+ "rand 0.8.5",
+ "serde",
+ "serde_with 2.3.3",
+]
+
+[[package]]
 name = "ferveo-pre-release"
 version = "0.3.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -546,7 +561,7 @@ dependencies = [
  "bincode",
  "console_error_panic_hook",
  "derive_more",
- "ferveo-common-pre-release",
+ "ferveo-common-pre-release 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "generic-array",
  "getrandom 0.2.10",
  "group-threshold-cryptography-pre-release",
@@ -560,10 +575,66 @@ dependencies = [
  "rand_core 0.6.4",
  "serde",
  "serde_with 2.3.3",
- "subproductdomain-pre-release",
+ "subproductdomain-pre-release 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "thiserror",
  "wasm-bindgen",
  "wasm-bindgen-derive",
+ "zeroize",
+]
+
+[[package]]
+name = "ferveo-pre-release"
+version = "0.3.0"
+source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
+dependencies = [
+ "ark-bls12-381",
+ "ark-ec",
+ "ark-ff",
+ "ark-poly",
+ "ark-serialize",
+ "ark-std",
+ "bincode",
+ "derive_more",
+ "ferveo-common-pre-release 0.1.1 (git+https://github.com/ghardin1314/ferveo.git)",
+ "ferveo-tdec",
+ "generic-array",
+ "hex",
+ "itertools",
+ "measure_time",
+ "rand 0.7.3",
+ "rand 0.8.5",
+ "rand_core 0.6.4",
+ "serde",
+ "serde_with 2.3.3",
+ "subproductdomain-pre-release 0.1.0 (git+https://github.com/ghardin1314/ferveo.git)",
+ "thiserror",
+ "zeroize",
+]
+
+[[package]]
+name = "ferveo-tdec"
+version = "0.2.0"
+source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
+dependencies = [
+ "ark-bls12-381",
+ "ark-ec",
+ "ark-ff",
+ "ark-poly",
+ "ark-serialize",
+ "ark-std",
+ "bincode",
+ "chacha20poly1305",
+ "ferveo-common-pre-release 0.1.1 (git+https://github.com/ghardin1314/ferveo.git)",
+ "itertools",
+ "miracl_core",
+ "rand 0.8.5",
+ "rand_core 0.6.4",
+ "serde",
+ "serde_bytes",
+ "serde_with 2.3.3",
+ "sha2",
+ "subproductdomain-pre-release 0.1.0 (git+https://github.com/ghardin1314/ferveo.git)",
+ "thiserror",
  "zeroize",
 ]
 
@@ -649,7 +720,7 @@ dependencies = [
  "ark-std",
  "bincode",
  "chacha20poly1305",
- "ferveo-common-pre-release",
+ "ferveo-common-pre-release 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "itertools",
  "miracl_core",
  "rand 0.8.5",
@@ -658,7 +729,7 @@ dependencies = [
  "serde_bytes",
  "serde_with 2.3.3",
  "sha2",
- "subproductdomain-pre-release",
+ "subproductdomain-pre-release 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "thiserror",
  "zeroize",
 ]
@@ -872,7 +943,7 @@ name = "nucypher-core"
 version = "0.14.0"
 dependencies = [
  "chacha20poly1305",
- "ferveo-pre-release",
+ "ferveo-pre-release 0.3.0 (git+https://github.com/ghardin1314/ferveo.git)",
  "generic-array",
  "hex",
  "hkdf",
@@ -894,7 +965,7 @@ name = "nucypher-core-python"
 version = "0.14.0"
 dependencies = [
  "derive_more",
- "ferveo-pre-release",
+ "ferveo-pre-release 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "nucypher-core",
  "pyo3",
  "pyo3-build-config",
@@ -907,7 +978,7 @@ version = "0.14.0"
 dependencies = [
  "console_error_panic_hook",
  "derive_more",
- "ferveo-pre-release",
+ "ferveo-pre-release 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "hex",
  "js-sys",
  "nucypher-core",
@@ -1387,6 +1458,18 @@ name = "subproductdomain-pre-release"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7331c4e4ab9b7c9ed4ad2e950e8760826622c7ab110d9f1b3f350e2005017eab"
+dependencies = [
+ "anyhow",
+ "ark-ec",
+ "ark-ff",
+ "ark-poly",
+ "ark-std",
+]
+
+[[package]]
+name = "subproductdomain-pre-release"
+version = "0.1.0"
+source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
 dependencies = [
  "anyhow",
  "ark-ec",
