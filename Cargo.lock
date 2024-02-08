@@ -534,7 +534,7 @@ dependencies = [
 [[package]]
 name = "ferveo-common-pre-release"
 version = "0.1.1"
-source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
+source = "git+https://github.com/ghardin1314/ferveo.git?branch=prerelease#b57278abbb942a647fdf935ccf594680159e03c5"
 dependencies = [
  "ark-ec",
  "ark-serialize",
@@ -564,7 +564,7 @@ dependencies = [
  "ferveo-common-pre-release 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "generic-array",
  "getrandom 0.2.10",
- "group-threshold-cryptography-pre-release",
+ "group-threshold-cryptography-pre-release 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "hex",
  "itertools",
  "js-sys",
@@ -585,7 +585,7 @@ dependencies = [
 [[package]]
 name = "ferveo-pre-release"
 version = "0.3.0"
-source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
+source = "git+https://github.com/ghardin1314/ferveo.git?branch=prerelease#b57278abbb942a647fdf935ccf594680159e03c5"
 dependencies = [
  "ark-bls12-381",
  "ark-ec",
@@ -595,9 +595,9 @@ dependencies = [
  "ark-std",
  "bincode",
  "derive_more",
- "ferveo-common-pre-release 0.1.1 (git+https://github.com/ghardin1314/ferveo.git)",
- "ferveo-tdec",
+ "ferveo-common-pre-release 0.1.1 (git+https://github.com/ghardin1314/ferveo.git?branch=prerelease)",
  "generic-array",
+ "group-threshold-cryptography-pre-release 0.2.0 (git+https://github.com/ghardin1314/ferveo.git?branch=prerelease)",
  "hex",
  "itertools",
  "measure_time",
@@ -606,34 +606,7 @@ dependencies = [
  "rand_core 0.6.4",
  "serde",
  "serde_with 2.3.3",
- "subproductdomain-pre-release 0.1.0 (git+https://github.com/ghardin1314/ferveo.git)",
- "thiserror",
- "zeroize",
-]
-
-[[package]]
-name = "ferveo-tdec"
-version = "0.2.0"
-source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
-dependencies = [
- "ark-bls12-381",
- "ark-ec",
- "ark-ff",
- "ark-poly",
- "ark-serialize",
- "ark-std",
- "bincode",
- "chacha20poly1305",
- "ferveo-common-pre-release 0.1.1 (git+https://github.com/ghardin1314/ferveo.git)",
- "itertools",
- "miracl_core",
- "rand 0.8.5",
- "rand_core 0.6.4",
- "serde",
- "serde_bytes",
- "serde_with 2.3.3",
- "sha2",
- "subproductdomain-pre-release 0.1.0 (git+https://github.com/ghardin1314/ferveo.git)",
+ "subproductdomain-pre-release 0.1.0 (git+https://github.com/ghardin1314/ferveo.git?branch=prerelease)",
  "thiserror",
  "zeroize",
 ]
@@ -730,6 +703,33 @@ dependencies = [
  "serde_with 2.3.3",
  "sha2",
  "subproductdomain-pre-release 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "thiserror",
+ "zeroize",
+]
+
+[[package]]
+name = "group-threshold-cryptography-pre-release"
+version = "0.2.0"
+source = "git+https://github.com/ghardin1314/ferveo.git?branch=prerelease#b57278abbb942a647fdf935ccf594680159e03c5"
+dependencies = [
+ "ark-bls12-381",
+ "ark-ec",
+ "ark-ff",
+ "ark-poly",
+ "ark-serialize",
+ "ark-std",
+ "bincode",
+ "chacha20poly1305",
+ "ferveo-common-pre-release 0.1.1 (git+https://github.com/ghardin1314/ferveo.git?branch=prerelease)",
+ "itertools",
+ "miracl_core",
+ "rand 0.8.5",
+ "rand_core 0.6.4",
+ "serde",
+ "serde_bytes",
+ "serde_with 2.3.3",
+ "sha2",
+ "subproductdomain-pre-release 0.1.0 (git+https://github.com/ghardin1314/ferveo.git?branch=prerelease)",
  "thiserror",
  "zeroize",
 ]
@@ -943,7 +943,7 @@ name = "nucypher-core"
 version = "0.14.0"
 dependencies = [
  "chacha20poly1305",
- "ferveo-pre-release 0.3.0 (git+https://github.com/ghardin1314/ferveo.git)",
+ "ferveo-pre-release 0.3.0 (git+https://github.com/ghardin1314/ferveo.git?branch=prerelease)",
  "generic-array",
  "hex",
  "hkdf",
@@ -1469,7 +1469,7 @@ dependencies = [
 [[package]]
 name = "subproductdomain-pre-release"
 version = "0.1.0"
-source = "git+https://github.com/ghardin1314/ferveo.git#15776e73f1086f299ab592492157728e84c2007f"
+source = "git+https://github.com/ghardin1314/ferveo.git?branch=prerelease#b57278abbb942a647fdf935ccf594680159e03c5"
 dependencies = [
  "anyhow",
  "ark-ec",
